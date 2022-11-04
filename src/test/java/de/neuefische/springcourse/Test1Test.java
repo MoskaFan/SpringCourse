@@ -1,8 +1,6 @@
 package de.neuefische.springcourse;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class DogTest {
+class Test1Test {
     public static void main(String[] args) {
         Pet pet = new Cat();
         pet.say();
