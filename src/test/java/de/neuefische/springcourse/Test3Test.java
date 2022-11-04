@@ -10,9 +10,14 @@ public class Test3Test {
         //Person person = new Person(pet);
         Person person = context.getBean("MyPerson", Person.class);
         person.callYourPet();
+        System.out.println(person.getAge());
+        System.out.println(person.getSurname());
+
+
         //Dependency via constructor
         //<constructor-arg ref="MyPet"></constructor-arg>
         //Dependency via setter
+        //<property name="pet" ref="MyPet" />
         context.close();
     }
 }

@@ -12,6 +12,8 @@
     <bean id = "MyPerson" class = "de.neuefische.springcourse.Person">
 
         <property name="pet" ref="MyPet" />
+        <property name="surname" value = "Atutova" />
+        <property name="age" value = "39" />
     </bean>
 
 </beans>
