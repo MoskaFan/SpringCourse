@@ -10,6 +10,9 @@ public class Test3Test {
         //Person person = new Person(pet);
         Person person = context.getBean("MyPerson", Person.class);
         person.callYourPet();
+        //Dependency via constructor
+        //<constructor-arg ref="MyPet"></constructor-arg>
+        //Dependency via setter
         context.close();
     }
 }

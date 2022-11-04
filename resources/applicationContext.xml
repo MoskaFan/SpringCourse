@@ -10,7 +10,8 @@
 
     </bean>
     <bean id = "MyPerson" class = "de.neuefische.springcourse.Person">
-        <constructor-arg ref="MyPet"></constructor-arg>
+
+        <property name="pet" ref="MyPet" />
     </bean>
 
 </beans>
