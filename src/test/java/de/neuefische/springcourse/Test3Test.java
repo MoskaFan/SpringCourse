@@ -13,7 +13,9 @@ public class Test3Test {
         System.out.println(person.getAge());
         System.out.println(person.getSurname());
 
-
+        //value injection of value
+        //<property name="surname" value = "Atutova" />
+        //<property name="age" value = "39" />
         //Dependency via constructor
         //<constructor-arg ref="MyPet"></constructor-arg>
         //Dependency via setter

@@ -8,16 +8,11 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
 
-    <context:property-placeholder location = "classpath:myApp.properties"></context:property-placeholder>
-    <bean id = "MyPet" class = "de.neuefische.springcourse.Dog">
+    <context:property-placeholder location="classpath:myApp.properties"></context:property-placeholder>
+    <bean id="MyPet" class="de.neuefische.springcourse.Dog"
+          scope="prototype">
 
     </bean>
-    <bean id = "MyPerson" class = "de.neuefische.springcourse.Person">
 
-        <property name="pet" ref="MyPet" />
-        <property name="surname" value = "${person.surname}" />
-        <property name="age" value = "${person.age}" />
-
-    </bean>
 
 </beans>
